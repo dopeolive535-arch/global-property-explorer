@@ -42,13 +42,13 @@ const HeroSection = ({ onSearch }: HeroSectionProps) => {
           <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Find Your Perfect
             <br />
-            <span className="text-primary">Home in Africa</span>
+            <span className="text-primary">Place in Africa</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            From urban apartments in Kampala to safari lodges in the Serengeti. 
-            Your next home awaits across Uganda, East Africa, and beyond.
+            From urban apartments in Kampala to safari lodges in the Serengeti.
+            Your perfect place awaits across Uganda, East Africa, and beyond.
           </p>
 
           {/* Search Box */}

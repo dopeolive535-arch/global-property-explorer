@@ -14,7 +14,7 @@ const initialMessages: Message[] = [
   {
     id: '1',
     role: 'assistant',
-    content: "Hello! I'm your AI property assistant. I can help you find properties, answer questions about listings, compare options, and guide you through the rental or buying process. How can I assist you today?",
+    content: "Hello! I'm your PlaceTo Africa AI assistant. I can help you find the perfect place across Africa, answer questions about listings, compare options, and guide you through the rental or buying process. How can I help you find your place today?",
     timestamp: new Date(),
   },
 ];
@@ -129,7 +129,7 @@ const AISupportChat = () => {
               <Bot className="w-5 h-5 text-primary-foreground" />
             </div>
             <div>
-              <h3 className="font-semibold text-foreground">AI Property Assistant</h3>
+              <h3 className="font-semibold text-foreground">PlaceTo AI Assistant</h3>
               <p className="text-xs text-muted-foreground flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
                 Online • Ready to help

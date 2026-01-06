@@ -20,24 +20,30 @@ const Header = ({ onSearchClick, onAuthClick }: HeaderProps) => {
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-display font-bold text-xl">P</span>
             </div>
-            <span className="font-display text-xl font-semibold text-foreground hidden sm:block">
-              PropDiscover
-            </span>
+            <div className="hidden sm:block">
+              <span className="font-display text-xl font-semibold text-foreground block leading-none">
+                PlaceTo Africa
+              </span>
+              <span className="text-xs text-muted-foreground">Find your place</span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Rent
+            <a href="/" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Home
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Buy
+            <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              About
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Categories
+            <a href="/how-it-works" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              How It Works
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
-              Locations
+            <a href="/help" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Help
+            </a>
+            <a href="/contact" className="text-muted-foreground hover:text-foreground transition-colors font-medium">
+              Contact
             </a>
           </nav>
 
@@ -90,17 +96,20 @@ const Header = ({ onSearchClick, onAuthClick }: HeaderProps) => {
         )}
       >
         <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
-          <a href="#" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
-            Rent
+          <a href="/" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
+            Home
           </a>
-          <a href="#" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
-            Buy
+          <a href="/about" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
+            About
           </a>
-          <a href="#" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
-            Categories
+          <a href="/how-it-works" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
+            How It Works
           </a>
-          <a href="#" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
-            Locations
+          <a href="/help" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
+            Help
+          </a>
+          <a href="/contact" className="py-3 px-4 rounded-lg hover:bg-muted transition-colors font-medium">
+            Contact
           </a>
           <div className="flex gap-2 pt-2 border-t border-border mt-2">
             <Button variant="outline" className="flex-1" onClick={onAuthClick}>

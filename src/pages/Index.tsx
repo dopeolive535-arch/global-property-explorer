@@ -9,7 +9,7 @@ import LocationsShowcase from '@/components/home/LocationsShowcase';
 import FeaturesSection from '@/components/home/FeaturesSection';
 import AISupportChat from '@/components/chat/AISupportChat';
 import { Property, PropertyCategory } from '@/types/property';
-import { mockProperties, getFeaturedProperties, searchProperties } from '@/data/mockProperties';
+import { mockProperties, getFeaturedProperties, fuzzySearchProperties } from '@/data/mockProperties';
 
 const Index = () => {
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
@@ -30,7 +30,7 @@ const Index = () => {
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     if (query.trim()) {
-      const results = searchProperties(query);
+      const results = fuzzySearchProperties(query);
       setDisplayedProperties(results.length > 0 ? results : mockProperties);
     } else {
       setDisplayedProperties(mockProperties);
